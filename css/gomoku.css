@@ -1,0 +1,53 @@
+.wrapper{
+	width: 901px;
+	margin: auto;
+}
+#gird_wrapper{
+	border: 18px solid #333;
+	background: wheat;
+}
+#grid_box{
+	overflow: hidden;
+	margin-left: -18px;
+	width: 901px;
+	margin-top: -18px;
+	margin-bottom: -17px;
+}
+.gridItem{
+	height: 36px;
+	width: 36px;
+	float: left;
+	position: relative;
+}
+.gridItem:before{
+	content: " ";
+	background: #333;
+	width: 36px;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+}
+.gridItem:after{
+	content: " ";
+	background: #333;
+	width: 1px;
+	height: 36px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+.gridItem > span{
+	width: 36px;
+	height: 36px;
+	display: block;
+	z-index: 99;
+	position: relative;
+}
+.gridItem > .white_piece{
+	background: url(../images/bk.png) no-repeat 0 -41px;
+}
+.gridItem > .black_piece{
+	background: url(../images/bk.png) no-repeat 0 0;
+}
